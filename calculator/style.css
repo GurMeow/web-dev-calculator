@@ -1,0 +1,25 @@
+#result-line {
+    font-size: 75px;
+    color: black;
+    position: relative;
+    left: 1540px;
+    top: 78px;
+}
+
+#minus-button-text {
+    position: relative;
+    bottom: 14px;
+}
+
+.calc-button {
+    margin: 1px;
+    font-size: 27px;
+    width: 395px; /* Set the width to your desired size */
+    height: 125px;
+    position: relative;
+    top: 160px;
+}
+
+body {
+    background-color: rgb(243, 243, 243);
+}
