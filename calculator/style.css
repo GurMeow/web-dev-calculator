@@ -1,24 +1,64 @@
-#result-line {
-    font-size: 75px;
-    color: black;
-    position: relative;
-    left: 1540px;
-    top: 78px;
-}
-
 #minus-button-text {
     position: relative;
     bottom: 14px;
 }
 
+#dot-button-text {
+    position: relative;
+    bottom: 1px;
+}
+
+#equation-line {
+    font-size: 75px;
+    margin: 2px;
+    color: black;
+    position: relative;
+    left: 20px;
+    top: 5px;
+}
+
+
+#result-line {
+    font-size: 75px;
+    margin: 2px;
+    color: black;
+    position: relative;
+    left: 15px;
+    top: 30px;
+}
+
+#equal-button {
+    background-color: rgb(0, 90, 158);
+}
+
+#equal-button:hover {
+    background-color: rgb(25, 106, 167);
+}
+
 .calc-button {
     margin: 1px;
-    font-size: 27px;
+    font-size: 33px;
     width: 395px; /* Set the width to your desired size */
     height: 125px;
     position: relative;
-    top: 160px;
+    top: 65px;
 }
+
+.top-row-button {
+    margin: 1px;
+    font-size: 33px;
+    width: 315.5px; /* Set the width to your desired size */
+    height: 125px;
+    position: relative;
+    top: 65px;
+}
+
+.btn-img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+
 
 body {
     background-color: rgb(243, 243, 243);
