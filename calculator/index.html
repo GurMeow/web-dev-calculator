@@ -7,69 +7,95 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p id="result-line">0</p>
+    <p id="equation-line" class="equation-result-line">-</p>
+    <p id="result-line" class="equation-result-line">0</p>
 
     <table>
         <tr>
-            <button type="button" class="calc-button">
-                <b>%</b>
+            <button type="button" class="top-row-button" onclick="add_open_bracket()">
+                <b>(</b>
             </button>
-        </tr>
-        <tr>
-            <button type="button" class="calc-button">
+            <button type="button" class="top-row-button" onclick="add_close_bracket()">
+                <b>)</b>
+            </button>
+            <button type="button" class="top-row-button" onclick="remove_last_number()">
                 <b>CE</b>
             </button>
-        </tr>
-        <tr>
-            <button type="button" class="calc-button">
+            <button type="button" class="top-row-button" onclick="clear_all()">
                 <b>C</b>
             </button>
-        </tr>
-        <tr>
-            <button type="button" class="calc-button">
-                <b>&lt;X</b>
+            <button type="button" class="top-row-button" onclick="remove_last()" id="remove_last_button">
+                <img src="remove_last_button_casual.jpg" class="btn-img">
             </button>
         </tr>
         <tr>
-            <button type="button" class="calc-button">
+            <button type="button" class="calc-button" onclick="add_answer()">
+                <b>ANS</b>
+            </button>
+            <button type="button" class="calc-button" onclick="add_fraction()">
                 <b>1/X</b>
             </button>
-            <button type="button" class="calc-button">
-                <b>X^2</b>
+            <button type="button" class="calc-button" onclick="add_power()">
+                <b>^</b>
             </button>
-            <button type="button" class="calc-button">
-                <b>X^(1/2)</b>
-            </button>
-            <button type="button" class="calc-button">
-                <b>/</b>
+            <button type="button" class="calc-button"  onclick="add_operation('/')">
+                <b>:</b>
             </button>
         </tr>
         <tr>
-            <button type="button" class="calc-button">
+            <button type="button" class="calc-button" onclick="add_number(7)">
                 <b>7</b>
             </button>
-            <button type="button" class="calc-button">
+            <button type="button" class="calc-button" onclick="add_number(8)">
                 <b>8</b>
             </button>
-            <button type="button" class="calc-button">
+            <button type="button" class="calc-button" onclick="add_number(9)">
                 <b>9</b>
             </button>
-            <button type="button" class="calc-button">
+            <button type="button" class="calc-button"  onclick="add_operation('*')">
                 <b>X</b>
             </button>
         </tr>
         <tr>
-            <button type="button" class="calc-button">
+            <button type="button" class="calc-button" onclick="add_number(4)">
                 <b>4</b>
             </button>
-            <button type="button" class="calc-button">
+            <button type="button" class="calc-button" onclick="add_number(5)">
                 <b>5</b>
             </button>
-            <button type="button" class="calc-button">
+            <button type="button" class="calc-button" onclick="add_number(6)">
                 <b>6</b>
             </button>
-            <button type="button" class="calc-button">
+            <button type="button" class="calc-button"  onclick="add_operation('-')">
                 <b id="minus-button-text">_</b>
+            </button>
+        </tr>
+        <tr>
+            <button type="button" class="calc-button" onclick="add_number(1)">
+                <b>1</b>
+            </button>
+            <button type="button" class="calc-button" onclick="add_number(2)">
+                <b>2</b>
+            </button>
+            <button type="button" class="calc-button" onclick="add_number(3)">
+                <b>3</b>
+            </button>
+            <button type="button" class="calc-button" onclick="add_operation('+')">
+                <b>+</b>
+            </button>
+        </tr>
+        <tr>
+            <button type="button" class="calc-button">
+                <b>+/-</b>
+            </button>
+            <button type="button" class="calc-button" onclick="add_number(0)">
+                <b>0</b>
+            </button>
+            <button type="button" class="calc-button" onclick="add_dot()">
+                <b id="dot-button-text">.</b>
+            </button>
+            <button type="button" class="calc-button" onclick="show_result()" id="equal-button">
+                <b>=</b>
             </button>
         </tr>
     </table>
